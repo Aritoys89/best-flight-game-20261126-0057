@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sky Courier - a valley flying game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0e13; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh;
+         font-family: system-ui, sans-serif; }
+  #frame { width: min(1280px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #79aede;
+           border-radius: 6px; box-shadow: 0 12px 48px rgba(0,0,0,0.55); cursor: crosshair; }
+  #hint { color: #8fa6bb; font-size: 13px; text-align: center; margin-top: 10px; }
+  #hint b { color: #d8e4ee; }
+</style>
+</head>
+<body>
+<div id="frame">
+  <canvas id="sky" width="1280" height="800"></canvas>
+  <p id="hint"><b>Sky Courier</b> - arrows or mouse-drag to fly, <b>W/S</b> throttle, <b>B</b> brake, <b>P</b> pause, <b>M</b> mute. Works fully offline.</p>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
